@@ -74,7 +74,6 @@ stages {
             --namespace expense \
             --create-namespace \
             --set deployment.tag=$IMAGE_TAG \
-            --wait --timeout 5m
             '''
         }
     }
