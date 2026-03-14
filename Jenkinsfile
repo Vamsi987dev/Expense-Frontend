@@ -55,6 +55,18 @@ stages {
             '''
         }
     }
+    stage('Debug Workspace') {
+    steps {
+        sh '''
+        echo "Current directory:"
+        pwd
+        echo "Files:"
+        ls -R
+        '''
+    }
+}
+    
+
     stage('Deploy to Kubernetes') {
         steps {
             sh '''
